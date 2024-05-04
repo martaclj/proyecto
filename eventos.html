@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Eventos</title>
+</head>
+<body>
+     <table class="main-table">
+      <!-- Área de Header -->
+      <tr>
+        <td class="logo"><img class="logo" src="img/logo.jpg" alt="Logo Pastelería"></td>
+        <td class="header-img"><span>Délice Pátisserie</span><img class="header-img" src="img/img1.jpg" alt=""></td>
+      </tr>
+      <!-- Menú -->
+      <tr>
+        <td colspan="2" class="nav-container">
+        <table class="nav-container-astable">
+          <tr>
+            <td colspan="3" class="nav-item inicio"><a href="index.html">Inicio</a></td>
+            <td class="nav-item resto"><a href="nosotros.html">Nosotros</a></td>
+            <td class="nav-item resto"><a href="productos.html">Productos</a></td>
+            <td class="nav-item resto"><a href="eventos.html">Eventos</a></td>
+            <td class="nav-item resto"><a href="contacto.html">Contacto</a></td>
+          </tr>
+        </td>
+        </table>
+      </tr>
+      <!-- Parte de contenido principal-->
+      <!-- Tabla anidada con productos -->
+      <tr>
+        <td colspan="2">
+          <table class="table-eventos">
+            <tr class="fila-texto">
+              <td colspan="2">¿Tienes algún evento especial?</td>
+            </tr>
+            <tr class="elige-evento">
+              <td>Babyshower</td>
+              <td>Bodas</td>
+            </tr>
+            <tr class="fila-imagenes">
+              <td><img src="img/baby.png" alt=""></td>
+              <td><img src="img/boda.jpg" alt=""></td>
+            </tr>
+            <tr class="formulario-eventos">
+              <td colspan="2">
+                <tr class="formulario-eventos">
+                  <td colspan="2">
+                    <form action="mailto:raul.rodriguez@proeducaglobal.com" method="post" enctype="text/plain">
+                      <table>
+                        <tr class="first-row-form">
+                          <td></td>
+                          <td>Envíanos la información</td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Nombre</td>
+                          <td colspan="2" class="dcha"><input type="text" id="nombre" name="nombre" required></td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Apellidos:</td>
+                          <td class="dcha" colspan="2"><input type="text" id="apellidos" name="apellidos" required></td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Teléfono:</td>
+                          <td class="dcha" colspan="2"><input type="tel" id="telefono" name="telefono" required></td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Email:</td>
+                          <td class="dcha" colspan="2"><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Dirección:</td>
+                          <td class="dcha" colspan="2"><input type="text" id="direccion" name="direccion" required></td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Población:</td>
+                          <td class="dcha" colspan="2">
+                            <select id="poblacion" name="poblacion">
+                              <option value="">Elige tu población</option>
+                              <option value="poblacion1">Madrid</option>
+                              <option value="poblacion2">Barcelona</option>
+                              <option value="poblacion3">Galicia</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Tipo de evento</td>
+                          <td class="dcha" colspan="2">
+                            <input type="checkbox" id="boda" name="evento" value="boda">Boda
+                            <input type="checkbox" id="babyshower" name="evento" value="baby">Babyshower
+                            <input type="checkbox" id="cumpleanos" name="evento" value="cumpleanos">Cumpleaños
+                            <input type="checkbox" id="empresa" name="evento" value="empresa">Empresa
+                        </tr>
+                        <tr>
+                          <td class="izqda">¿Entrega a domicilio?</td>
+                          <td class="dcha">Sí<input type="checkbox" id="entregaSi" name="entrega" value="si"> No, recoger en tienda<input type="checkbox" id="entregaNo" name="entrega" value="no"></td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Coméntanos tu idea:</td>
+                          <td colspan="2"><textarea  id="idea" name="idea" rows="4" cols="50"></textarea></td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Puedes adjuntar una foto</td>
+                          <td class="dcha" colspan="2"><input type="file" id="adjunto" name="adjunto" accept="image/*"></td>
+                        </tr>
+                        <tr>
+                          <td class="izqda">Opción: Enviar o Resetear</td>
+                          <td class="dcha" colspan="2">
+                            <button type="submit">Enviar Mensaje</button>
+                            <button type="reset">Resetear</button>
+                          </td>
+                        </tr>
+                      </table>
+                    </form>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Footer -->
+      <tr class="footer">
+        <td colspan="3" class="item6">Aviso legal / Política de cookies <span>@Autor: Marta Cristina Larrad Jomse</span></td>
+      </tr>
+     </table>
+</body>
+</html>

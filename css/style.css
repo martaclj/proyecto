@@ -1,0 +1,264 @@
+/* fuentes importadas son: */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Kranky&family=Londrina+Solid:wght@300&display=swap');
+.fuzzy-bubbles-regular {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.kranky-regular {
+  font-family: "Kranky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.londrina-solid-light {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/* comienzo del css */
+/* css de index.html y en parte del resto */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../img/background.jpg);
+  text-align: center;
+  font-family: "Londrina Solid", sans-serif;
+}
+/* tabla primaria que organiza la página */
+.main-table {
+  background: url(../img/background2.jpg);
+  width: 1000px;
+  height: 1100px;
+  margin: auto;
+}
+.main-table td {
+  /* borde se borrará al final */
+  /* border: 1px solid black; */
+  border-style: none;
+}
+.logo {
+  width: 300px;
+  height: 300px;
+}
+.header-img img {
+  width: 700px;
+  height: 300px;
+  z-index: 0;
+}
+.header-img span {
+  position: absolute;
+  margin: 130px 0px 0px 160px;
+  z-index: 1;
+  font-size: 48px;
+  color: maroon;
+  font-family: "Kranky", sans-serif;
+}
+.nav-table {
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-container {
+  background: inherit;
+  color: white;
+}
+.nav-container-astable {
+  width: 100%;
+  height: 60px;
+}
+.nav-container-astable td {
+  border-style: none;
+  width: 173px;
+}
+.nav-item {
+  background-color: #a277ad;
+  width: 203px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+}
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+.nav-item a:hover {
+  cursor: pointer;
+}
+.hero-image-container {
+  height: 230px;
+}
+.hero-image-container img {
+  width: 1000px;
+}
+.section-text {
+  width: 400px;
+  height: 460px;
+}
+.section-text section {
+  /* width: 230px; */
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.section-text section h2{
+  font-family: "Kranky", serif;
+  margin: 60px 0;
+}
+.section-text section p {
+  margin: 40px;
+}
+.linea {
+  margin-bottom: 5px;
+  width: 100%;
+  size: 6px;
+  border: 1px solid #962d59;
+}
+.linea .final {
+  margin-top: 5px;
+  width: 100%;
+  size: 6px;
+  border: 1px solid #962d59;
+}
+.aside {
+  width: 600px;
+  height: 450px;
+}
+.footer {
+  color: white;
+  background-color: #a277ad;
+}
+/* css añadido para nosotros.html */
+/* css menú nosotros.html ajustes */
+.row-menu-nosotros td {
+  width: 173px;
+  margin: 0;
+}
+.hero-image-nosotros {
+  text-align: center;
+  height: 80px;
+}
+.hero-image-nosotros div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cupcake {
+  width: 80px;
+  height: 80px;
+}
+.hero-image-nosotros span {
+  color: #962d59;
+  font-size: 24px;
+  text-decoration:underline;
+  float: unset;
+}
+.morado {
+  width: 600px;
+  margin: auto;
+  color: purple;
+  border-radius: 10px;
+  border-style: dotted;
+  padding: 20px;
+}
+.galeria-img {
+  width: 600px;
+  height: 450px;
+  margin-top: 10px;
+  border: 1px dotted purple;
+  border-radius: 10px;
+}
+/* css de tabla anidada en productos.html */
+.productos-table {
+  margin: auto;
+  width: 200px;
+  height: auto
+}
+.productos-table td {
+  border-style: none;
+}
+.productos-table tr .nombre-producto {
+  height: auto
+}
+.nombre-producto {
+  background-color: rgb(241, 216, 219);
+  font-family: "Fuzzy Bubbles", sans-serif;
+  color: #612e43;
+}
+.productos-table .subtitulo {
+  color: #612e43;
+}
+.productos-table a {
+  text-decoration: none;
+  color: #612e43;
+}
+/* css eventos table */
+.table-eventos {
+  margin: auto;
+  margin-bottom: 20px;
+}
+.table-eventos td {
+  border-style: none;
+  width: 200px;
+  height: 30px;
+}
+/* css form */
+.formulario-eventos {
+  color: rgb(46, 43, 43);
+}
+.fila-texto, .elige-evento, .first-row-form {
+  color:#612e43;
+  font-family: "Fuzzy Bubbles", sans-serif;
+}
+.izqda {
+  height: 30px;
+  text-align: right;
+}
+.dcha {
+  height: 30px;
+  text-align: left;
+}
+/* css de contacto */
+.celda-direccion iframe {
+  width: 100%;
+  height: 300px;
+  /* Con 200px de alto queda muy pequeño */
+  /* pongo 300px */
+}
+.cabecera-form {
+  text-align: center;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #612e43;
+}
+.cabecera-form td {
+  border-style: none;
+}
+.celda-texto-pasteleria {
+  padding: 40px;
+  width: 245px;
+}
+.form-contacto td {
+  width: 380px;
+  height: 50px;
+  border-style: none;
+}
+.boton {
+  width: 100px;
+  height:40px;
+}
+.celda-texto-pasteleria p {
+  margin-bottom: 10px;
+}
+.celda-texto-pasteleria img , .celda-texto-pasteleria .span {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+.white {
+  color: white;
+}
